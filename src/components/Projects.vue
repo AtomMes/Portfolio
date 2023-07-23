@@ -16,6 +16,7 @@ import mui from "../assets/mui.svg";
 import firebase from "../assets/firebase.png";
 import typescript from "../assets/typescript.png";
 import memberHome from "../assets/projects/member.png";
+import redux from "../assets/redux.png";
 import fastFood from "../assets/projects/fast.png";
 import mobileHome from "../assets/projects/mobileHome.jpg";
 import mobileCart from "../assets/projects/mobileCart.jpg";
@@ -23,7 +24,6 @@ import mobileInfo from "../assets/projects/mobileInfo.jpg";
 import mobileFull from "../assets/projects/mobileFull.jpg";
 import Project from "./Project.vue";
 import MobileProject from "./MobileProject.vue";
-import redux from "../assets/redux.png";
 
 export default {
   name: "Projects",

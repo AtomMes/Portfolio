@@ -50,16 +50,16 @@
 </template>
 
 <script>
-import telegram from "../assets/telegram.png";
-import whatsapp from "../assets/whatsapp.png";
-import linkedin from "../assets/linkedin.png";
-import github from "../assets/github.png";
-import react from "../assets/react.png";
-import typescript from "../assets/typescript.png";
-import next from "../assets/next.png";
-import javascript from "../assets/javascript.png";
 import cv from "../assets/cv.png";
+import github from "../assets/github.png";
+import javascript from "../assets/javascript.png";
+import linkedin from "../assets/linkedin.png";
+import next from "../assets/next.png";
+import react from "../assets/react.png";
+import telegram from "../assets/telegram.png";
+import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
+import whatsapp from "../assets/whatsapp.png";
 
 export default {
   name: "Hero",
@@ -88,47 +88,3 @@ export default {
   },
 };
 </script>
-<!-- 
-import telegram from "../assets/telegram.png";
-import whatsapp from "../assets/whatsapp.png";
-import linkedin from "../assets/linkedin.png";
-import github from "../assets/github.png";
-import react from "../assets/react.png";
-import mui from "../assets/mui.svg";
-import firebase from "../assets/firebase.png";
-import typescript from "../assets/typescript.png";
-import next from "../assets/next.png";
-import javascript from "../assets/javascript.png";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import sass from "../assets/sass.png";
-import git from "../assets/git.png";
-import githubWhite from "../assets/github-white.png";
-import vue from "../assets/vue.png";
-import redux from "../assets/redux.png";
-import tailwind from "../assets/tailwind.png"; -->
-<!-- 
-{ url: html, to: "https://www.w3schools.com/html/" },
-{ url: css, to: "https://www.w3schools.com/css/" },
-{ url: typescript, to: "https://www.typescriptlang.org/" },
-{ url: javascript, to: "https://javascript.info/" },
-{ url: react, to: "https://reactjs.org/" },
-{ url: next, to: "https://nextjs.org/" },
-{ url: vue, to: "https://vuejs.org/" },
-{ url: redux, to: "https://redux.js.org/" },
-{ url: mui, to: "https://mui.com/" },
-{ url: firebase, to: "https://firebase.google.com/" },
-{ url: sass, to: "https://sass-lang.com/" },
-{ url: git, to: "https://git-scm.com/" },
-{ url: githubWhite, to: "https://github.com/AtomMes" },
-{ url: tailwind, to: "https://tailwindcss.com/" }, -->
-
-<!-- <p class="text-[18px]">
-  Hello, I'm Artem Mesropyan, a 17-year-old self-taught front-end
-  developer from Armenia. With over a year of experience in web
-  development, I enjoy working with React Native, Next.js, and Vue to
-  create cool and user-friendly websites. I am constantly learning to keep
-  up with the latest web dev tech. Apart from coding, I also have a
-  passion for chess, playing football with friends, and listening to
-  music. Making friends from all walks of life is my jam.
-</p> -->

@@ -1,6 +1,5 @@
 <template>
   <div id="app" class="bg-[#182239]">
-    <!-- For md and larger screens, show the regular navigation -->
     <nav
       v-if="$data.$screen.md"
       class="bg-[#1c2742] sticky top-0 left-0 z-50 px-16"
@@ -8,15 +7,12 @@
       <div
         class="w-full max-w-[1000px] mx-auto text-white flex justify-end items-center gap-6 py-5"
       >
-        <!-- Use anchors with "href" attribute to scroll to each section -->
         <a href="#home"><button>Home</button></a>
         <a href="#about"><button>About</button></a>
         <a href="#projects"><button>Projects</button></a>
         <a href="#contact"><button>Contact</button></a>
       </div>
     </nav>
-
-    <!-- For sm and smaller screens, show the dropdown navigation -->
     <nav v-else class="bg-[#1c2742] sticky top-0 left-0 z-50 px-16">
       <div
         class="w-full max-w-[1000px] mx-auto text-white flex justify-end items-center gap-6 py-5"
@@ -68,7 +64,7 @@
 }
 
 html {
-  scroll-behavior: smooth; /* Enable smooth scrolling for all anchor links */
+  scroll-behavior: smooth; 
 }
 button {
   background-color: transparent;
@@ -100,11 +96,10 @@ export default {
         lg: false,
         xl: false,
       },
-      showDropdown: false, // New data property to control dropdown visibility
+      showDropdown: false, 
     };
   },
   mounted() {
-    // Detect screen size on mount and whenever the window is resized
     this.handleResize();
     window.addEventListener("resize", this.handleResize);
   },

@@ -52,11 +52,8 @@
 
 <style>
 .no-scrollbar {
-  /* Hide the scrollbar and scrollbar track */
   scrollbar-width: none;
-  -ms-overflow-style: none; /* for Internet Explorer and Edge */
-
-  /* Hide scrollbar thumb on WebKit/Blink-based browsers */
+  -ms-overflow-style: none;
   &::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -102,7 +99,7 @@ export default {
             clearInterval(this.intervalId);
           }
         }
-      }, 1); // Adjust the interval time for smoother or faster scrolling (smaller value for smoother scrolling)
+      }, 1); 
     },
     stopScrolling() {
       clearInterval(this.intervalId);
