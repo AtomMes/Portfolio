@@ -1,0 +1,77 @@
+<template lang="">
+  <div
+    :class="{ 'flex-row-reverse': i % 2 === 1 }"
+    class="flex mr-0 lg:mr-1 flex-col items-center lg:flex-row here py-5 px-5 lg:py-10 lg:px-10 md:gap-[40px]  bg-[#1c2742] rounded-2xl mb-[80px]"
+  >
+    <div class="flex flex-wrap w-[100%] lg:w-[65%]">
+      <div
+        v-for="(img, i) in project.image"
+        class="w-[49%] md:w-[24%] h-[320px] relative mr-[1px] here mb-5 md:mb-0"
+      >
+        <img
+          :src="img"
+          :alt="img"
+          class="h-[100%] max-h-[320px] object-contain rounded-md hover:z-10 left-[50%] translate-x-[-50%] hover:translate-y-[-20%] absolute hover:scale-[2] ease-in-out duration-300"
+        />
+      </div>
+    </div>
+
+    <div
+      class="w-[100%] lg:w-[35%] pt-10 lg:pt-0 text-white flex flex-col gap-3 items-center"
+    >
+      <p class="font-bold text-[25px]">{{ project.title }}</p>
+      <p class="text-center text-[#dcdbdb]">
+        {{ project.description }}
+      </p>
+      <div class="flex gap-3 my-4">
+        <div
+          v-for="(icon, i) in project.icons"
+          :key="i"
+          class="flex justify-center items-center ease-in-out duration-300 hover:scale-105 hover:-translate-y-1 relative"
+        >
+          <img :src="icon[0]" :alt="icon[1]" class="h-[40px]" />
+          <div
+            class="flex whitespace-nowrap justify-center items-end absolute top-0 h-[160%] duration-300 text-opacity-0 hover:text-opacity-100 text-white"
+          >
+            {{ icon[1] }}
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-5">
+        <button
+          class="border px-3 py-1 font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]"
+          @click="navigateToLink(project.github)"
+        >
+          Code
+        </button>
+        <button
+          class="border px-3 py-1 font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]"
+          @click="navigateToLink(project.link)"
+        >
+          Review
+        </button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Project",
+  props: {
+    project: {
+      type: Object,
+      required: true,
+    },
+    index: {
+      type: Number,
+      required: true,
+    },
+  },
+  methods: {
+    navigateToLink(link) {
+      window.open(link, "_blank");
+    },
+  },
+};
+</script>
