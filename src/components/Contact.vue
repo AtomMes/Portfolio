@@ -33,7 +33,7 @@ import mail from "../assets/mail.png";
 import call from "../assets/call.png";
 
 export default {
-  name: "Footer",
+  name: "Contact",
   data() {
     return {
       mail: [mail, "mesropyann.artem@gmail.com"],
