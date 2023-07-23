@@ -58,9 +58,7 @@ import react from "../assets/react.png";
 import typescript from "../assets/typescript.png";
 import next from "../assets/next.png";
 import javascript from "../assets/javascript.png";
-import cv from "../assets/cv3.png";
-
-import githubWhite from "../assets/github-white.png";
+import cv from "../assets/cv.png";
 import vue from "../assets/vue.png";
 
 export default {
