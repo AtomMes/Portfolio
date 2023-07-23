@@ -27,9 +27,9 @@
       </div>
     </div>
     <div
-      class="flex justify-center lg:justify-start gap-6 items-center text-white text-[25px] pt-[70px]"
+      class="px-3 sm:px-0 flex flex-col sm:flex-row justify-center lg:justify-start gap-6 items-center text-white text-[25px] pt-[70px]"
     >
-      <p>Main Stack:</p>
+      <p class=' whitespace-nowrap' >Main Stack</p>
       <div class="flex flex-wrap items-center justify-center gap-6">
         <div
           v-for="(imageSrc, i) in techStack"

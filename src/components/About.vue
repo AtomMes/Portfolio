@@ -32,13 +32,13 @@
           A dedicated Front-end Developer based in Vanadzor, Armenia
         </p>
         <p class="text-[19px] text-[#dcdbdb]">
-          Hello, I'm Artem Mesropyan, a 17-year-old self-taught front-end
-          developer from Armenia. With over a year of experience in web
-          development, I enjoy working with React Native, Next.js, and Vue to
-          create cool and user-friendly websites. I am constantly learning to
-          keep up with the latest web dev tech. Apart from coding, I also have a
-          passion for chess, playing football with friends, and listening to
-          music. Making friends from all walks of life is my jam.
+          I'm Artem Mesropyan, a 17-year-old self-taught front-end developer
+          from Armenia. With over a year of experience in web development, I
+          enjoy working with React Native, Next.js, and Vue to create
+          user-friendly websites. I am constantly learning to keep up with the
+          latest web dev tech. Apart from coding, I have a passion for chess,
+          playing football with friends, and listening to music. Making friends
+          from all walks of life is my jam.
         </p>
       </div>
     </div>
