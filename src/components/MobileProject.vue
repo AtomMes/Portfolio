@@ -1,17 +1,22 @@
 <template lang="">
   <div
     :class="{ 'flex-row-reverse': i % 2 === 1 }"
-    class="flex mr-0 lg:mr-1 flex-col items-center lg:flex-row here py-5 px-5 lg:py-10 lg:px-10 md:gap-[40px]  bg-[#1c2742] rounded-2xl mb-[80px]"
+    class="flex mr-0 lg:mr-1 flex-col items-center lg:flex-row here py-5 px-5 lg:py-10 lg:px-10 md:gap-[40px] bg-[#1c2742] rounded-2xl mb-[80px]"
   >
     <div class="flex flex-wrap w-[100%] lg:w-[65%]">
       <div
         v-for="(img, i) in project.image"
-        class="w-[49%] md:w-[24%] h-[320px] relative mr-[1px] here mb-5 md:mb-0"
+        class="w-[49%] md:w-[24%] h-[320px] mr-[1px] here mb-5 md:mb-0 flex items-center justify-center"
       >
         <img
           :src="img"
           :alt="img"
-          class="h-[100%] max-h-[320px] object-contain rounded-md hover:z-10 left-[50%] translate-x-[-50%] hover:translate-y-[-20%] absolute hover:scale-[2] ease-in-out duration-300"
+          class="h-fit max-h-[320px] rounded-md object-contain"
+          :class="
+            isMobile
+              ? null
+              : 'sm:hover:absolute  sm:hover:z-10 sm:hover:scale-[2] ease-in-out duration-300'
+          "
         />
       </div>
     </div>
@@ -71,6 +76,13 @@ export default {
   methods: {
     navigateToLink(link) {
       window.open(link, "_blank");
+    },
+    checkIfMobile() {
+      const isMobile =
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        );
+      return isMobile;
     },
   },
 };
