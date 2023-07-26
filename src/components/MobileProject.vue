@@ -44,13 +44,13 @@
       </div>
       <div class="flex gap-5">
         <button
-          class="border px-3 py-1 font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]"
+          class="border border-solid border-white  px-4 pb-[1px] h-[35px] font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]"
           @click="navigateToLink(project.github)"
         >
           Code
         </button>
         <button
-          class="border px-3 py-1 font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]"
+          class="border border-solid border-white  px-4 pb-[1px] h-[35px] font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]"
           @click="navigateToLink(project.link)"
         >
           Review

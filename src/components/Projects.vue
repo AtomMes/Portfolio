@@ -1,6 +1,6 @@
 <template>
   <div class="w-full max-w-[1000px] mx-auto py-[80px]" id="projects">
-    <p class="text-white text-[30px] pb-10 pl-2">Some Of My Projects</p>
+    <p class="text-white text-[30px] pb-10 pl-2 text-center lg:text-left">Some Of My Projects</p>
     <div v-for="(project, i) in projects" :key="i" class="px-3">
       <Project :project="project" :index="i" />
     </div>
