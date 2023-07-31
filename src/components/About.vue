@@ -34,10 +34,11 @@
         <p class="text-[19px] text-[#dcdbdb]">
           I'm Artem Mesropyan, a 17-year-old self-taught front-end developer
           from Armenia. With over a year of experience in web development, I
-          enjoy working with React, React Native, Next.js, and Vue to create
-          user-friendly websites. I am constantly learning to keep up with the
-          latest web dev tech. Apart from coding, I have a passion for chess,
-          playing football with friends, and listening to music. 
+          enjoy working with Front-end development libraries such as React,
+          Next, Vue, and React Native to create user-friendly websites. I am
+          constantly learning to keep up with the latest web dev tech. Apart
+          from coding, I have a passion for chess, playing football with
+          friends, and listening to music.
         </p>
       </div>
     </div>
