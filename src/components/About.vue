@@ -15,7 +15,7 @@
             :key="i"
             class="ease-in-out duration-300 hover:scale-105 hover:-translate-y-1 relative"
           >
-            <img :src="imageSrc[0]" :alt="imageSrc[1]" class="w-full" />
+            <img :src="imageSrc[0]" :alt="imageSrc[1]" class="w-full " />
             <div
               class="flex text-center w-full whitespace-nowrap justify-center items-end absolute top-0 h-[120%] duration-300 text-opacity-0 hover:text-opacity-100 text-white"
             >
@@ -32,13 +32,13 @@
           A dedicated Front-end Developer based in Vanadzor, Armenia
         </p>
         <p class="text-[19px] text-[#dcdbdb]">
-          I'm Artem Mesropyan, a 17-year-old self-taught front-end developer
-          from Armenia. With over a year of experience in web development, I
-          enjoy working with Front-end development libraries such as React,
-          Next, Vue, and React Native to create user-friendly websites. I am
-          constantly learning to keep up with the latest web dev tech. Apart
-          from coding, I have a passion for chess, playing football with
-          friends, and listening to music.
+          My name is Artem Mesropyan, I'm a 17-year-old self-taught front-end
+          developer from Armenia.
+          <br />
+          With over a year of experience in web development, I enjoy working
+          with Front-end development libraries such as React, Next, Vue, React
+          Native and Angular to create user-friendly websites. I am constantly
+          learning to keep up with the latest web dev tech.
         </p>
       </div>
     </div>
@@ -60,7 +60,7 @@ import githubWhite from "../assets/github-white.png";
 import vue from "../assets/vue.png";
 import redux from "../assets/redux.png";
 import tailwind from "../assets/tailwind.png";
-import webpack from "../assets/webpack.png";
+import angular from "../assets/angular.png";
 
 export default {
   name: "Hero",
@@ -71,6 +71,7 @@ export default {
         [css, "CSS"],
         [javascript, "JavaScript"],
         [typescript, "TypeScript"],
+        [angular, "Angular"],
         [react, "React/React Native"],
         [next, "Next.js"],
         [vue, "Vue, Vuex"],
@@ -81,7 +82,6 @@ export default {
         [githubWhite, "GitHub"],
         [firebase, "Firebase"],
         [mui, "Material-UI"],
-        [webpack, "Webpack"],
       ],
     };
   },

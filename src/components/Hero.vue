@@ -8,7 +8,7 @@
       >
         <p class="text-[50px] font-bold">Front-End Developer</p>
         <p class="text-[18px]">
-          Hello, I'm Artem Mesropyan, a 17-year-old self-taught front-end
+          Hello, I'm Artem, a 17-year-old self-taught front-end
           developer from Armenia.
         </p>
         <div class="flex self-center lg:self-start">
@@ -22,14 +22,14 @@
           </div>
         </div>
       </div>
-      <div class=" w-[80%] sm:w-[40%]">
+      <div class="w-[80%] sm:w-[40%]">
         <img src="../assets/PFP.jpg" alt="PFP" class="rounded-[60px]" />
       </div>
     </div>
     <div
       class="px-3 sm:px-0 flex flex-col sm:flex-row justify-center lg:justify-start gap-6 items-center text-white text-[25px] pt-[70px]"
     >
-      <p class=' whitespace-nowrap' >Main Stack</p>
+      <p class="whitespace-nowrap">Main Stack</p>
       <div class="flex flex-wrap items-center justify-center gap-6">
         <div
           v-for="(imageSrc, i) in techStack"
@@ -60,6 +60,7 @@ import telegram from "../assets/telegram.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
 import whatsapp from "../assets/whatsapp.png";
+import angular from "../assets/angular.png";
 
 export default {
   name: "Hero",
@@ -73,11 +74,12 @@ export default {
         { url: github, to: "https://github.com/AtomMes" },
       ],
       techStack: [
-        [react, "React/React Native"],
-        [next, "Next.js"],
-        [vue, "Vue, Vuex"],
         [javascript, "JavaScript"],
         [typescript, "TypeScript"],
+        [react, "React/React Native"],
+        [vue, "Vue, Vuex"],
+        [next, "Next.js"],
+        [angular, "Angular"],
       ],
     };
   },
