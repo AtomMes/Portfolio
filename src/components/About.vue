@@ -37,7 +37,7 @@
           <br />
           With over a year of experience in web development, I enjoy working
           with Front-end development libraries such as React, Next, Vue, React
-          Native and Angular to create user-friendly websites. I am constantly
+          Native, and Angular to create user-friendly websites. I am constantly
           learning to keep up with the latest web dev tech.
         </p>
       </div>
