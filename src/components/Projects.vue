@@ -1,23 +1,28 @@
 <template>
   <div class="w-full max-w-[1000px] mx-auto py-[80px]" id="projects">
-    <p class="text-white text-[30px] pb-10 pl-2 text-center lg:text-left">Some Of My Projects</p>
-    <div v-for="(project, i) in projects" :key="i" class="px-3">
-      <Project :project="project" :index="i" />
+    <p class="text-white text-[30px] pb-10 pl-2 text-center lg:text-left">
+      Some Of My Projects
+    </p>
+    <div v-for="project in projects" :key="project.index" class="px-3">
+      <Project :project="project" :index="project.index" />
     </div>
-    <div v-for="(project, i) in mobile" :key="i" class="px-3">
-      <MobileProject :project="project" :index="i" />
+    <div v-for="project in mobile" :key="project.index" class="px-3">
+      <MobileProject :project="project" :index="project.index" />
     </div>
   </div>
 </template>
 
 <script>
 import react from "../assets/react.png";
+import angular from "../assets/angular.png";
+import tailwind from "../assets/tailwind.png";
 import mui from "../assets/mui.svg";
 import firebase from "../assets/firebase.png";
 import typescript from "../assets/typescript.png";
 import memberHome from "../assets/projects/member.png";
 import redux from "../assets/redux.png";
 import fastFood from "../assets/projects/fast.png";
+import memberbase from "../assets/projects/memberbase.png";
 import mobileHome from "../assets/projects/mobileHome.jpg";
 import mobileCart from "../assets/projects/mobileCart.jpg";
 import mobileInfo from "../assets/projects/mobileInfo.jpg";
@@ -50,6 +55,20 @@ export default {
             [typescript, "TypeScript"],
             [redux, "Redux Toolkit"],
           ],
+          index: 1,
+        },
+        {
+          title: "Memberbase",
+          description:
+            "Memberbase is a free modern website with membership functionality. It makes it easy to build a website with gated content.",
+          link: "https://memberbase-at.netlify.app",
+          github: "https://github.com/AtomMes/Memberbase",
+          image: memberbase,
+          icons: [
+            [angular, "Angular"],
+            [tailwind, "Tailwind"],
+          ],
+          index: 2,
         },
         {
           title: "Fast Food",
@@ -63,6 +82,7 @@ export default {
             [mui, "MUI"],
             [redux, "Redux Toolkit"],
           ],
+          index: 3,
         },
       ],
       mobile: [
@@ -78,6 +98,7 @@ export default {
             [mui, "MUI"],
             [redux, "Redux Toolkit"],
           ],
+          index: 4,
         },
       ],
     };

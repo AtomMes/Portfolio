@@ -1,6 +1,6 @@
 <template lang="">
   <div
-    :class="{ 'flex-row-reverse': index % 2 === 1 }"
+    :class="{ 'lg:flex-row-reverse': index % 2 !== 1 }"
     class="flex flex-col lg:flex-row gap-[50px] py-5 px-5 lg:py-10 lg:px-10 bg-[#1c2742] rounded-2xl mb-[80px] items-center justify-center"
   >
     <div
@@ -34,13 +34,13 @@
       </div>
       <div class="flex gap-5">
         <button
-          class="border border-solid border-white px-4 pb-[1px] h-[35px]  font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742] "
+          class="border border-solid border-white px-4 pb-[1px] h-[35px] font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]"
           @click="navigateToLink(project.github)"
         >
           Code
         </button>
         <button
-          class="border border-solid border-white px-4 pb-[1px] h-[35px] font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]  "
+          class="border border-solid border-white px-4 pb-[1px] h-[35px] font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]"
           @click="navigateToLink(project.link)"
         >
           Review
@@ -87,7 +87,15 @@ export default {
     navigateToLink(link) {
       window.open(link, "_blank");
     },
+    created() {
+      this.property = "Example property update.";
+
+      console.log(
+        "propertyComputed will update, as this.property is now reactive."
+      );
+    },
     startScrolling() {
+      console.log("index is", this.index);
       this.intervalId = setInterval(() => {
         const container = this.$refs.imageContainer;
         if (container) {
@@ -99,7 +107,7 @@ export default {
             clearInterval(this.intervalId);
           }
         }
-      }, 1); 
+      }, 1);
     },
     stopScrolling() {
       clearInterval(this.intervalId);

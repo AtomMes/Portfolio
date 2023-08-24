@@ -1,6 +1,6 @@
 <template lang="">
   <div
-    :class="{ 'flex-row-reverse': i % 2 === 1 }"
+    :class="{ 'lg:flex-row-reverse': index % 2 === 0 }"
     class="flex mr-0 lg:mr-1 flex-col items-center lg:flex-row here py-5 px-5 lg:py-10 lg:px-10 md:gap-[40px] bg-[#1c2742] rounded-2xl mb-[80px]"
   >
     <div class="flex flex-wrap w-[100%] lg:w-[65%]">
