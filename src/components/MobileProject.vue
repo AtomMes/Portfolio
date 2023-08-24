@@ -34,18 +34,23 @@
           :key="i"
           class="flex justify-center items-center ease-in-out duration-300 hover:scale-105 hover:-translate-y-1 relative"
         >
-          <Skill :icon='icon' size='40px' />
+          <img :src="icon[0]" :alt="icon[1]" class="h-[40px]" />
+          <div
+            class="flex whitespace-nowrap justify-center items-end absolute top-0 h-[160%] duration-300 text-opacity-0 hover:text-opacity-100 text-white"
+          >
+            {{ icon[1] }}
+          </div>
         </div>
       </div>
       <div class="flex gap-5">
         <button
-          class="border border-solid border-white px-4 pb-[1px] h-[35px] font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]"
+          class="border border-solid border-white  px-4 pb-[1px] h-[35px] font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]"
           @click="navigateToLink(project.github)"
         >
           Code
         </button>
         <button
-          class="border border-solid border-white px-4 pb-[1px] h-[35px] font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]"
+          class="border border-solid border-white  px-4 pb-[1px] h-[35px] font-semibold rounded-md ease-in-out duration-300 hover:bg-white hover:text-[#1c2742]"
           @click="navigateToLink(project.link)"
         >
           Review
@@ -56,8 +61,6 @@
 </template>
 
 <script>
-import Skill from "./Skill";
-
 export default {
   name: "Project",
   props: {
@@ -81,9 +84,6 @@ export default {
         );
       return isMobile;
     },
-  },
-  components: {
-    Skill,
   },
 };
 </script>

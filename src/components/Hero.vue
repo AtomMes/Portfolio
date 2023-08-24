@@ -34,9 +34,14 @@
         <div
           v-for="(imageSrc, i) in techStack"
           :key="i"
-          class="ease-in-out duration-300 hover:scale-105 hover:-translate-y-1 relative text-[16px]"
+          class="ease-in-out duration-300 hover:scale-105 hover:-translate-y-1 relative"
         >
-          <Skill :icon='imageSrc' size="40px" />
+          <img :src="imageSrc[0]" :alt="imageSrc[1]" class="h-[40px]" />
+          <div
+            class="flex text-[16px] w-full whitespace-nowrap justify-center items-end absolute top-0 h-[160%] duration-300 text-opacity-0 hover:text-opacity-100 text-white"
+          >
+            {{ imageSrc[1] }}
+          </div>
         </div>
       </div>
     </div>
@@ -56,7 +61,6 @@ import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
 import whatsapp from "../assets/whatsapp.png";
 import angular from "../assets/angular.png";
-import Skill from './Skill.vue'
 
 export default {
   name: "Hero",
@@ -83,9 +87,6 @@ export default {
     navigateToLink(link) {
       window.open(link, "_blank");
     },
-  },
-  components: {
-    Skill,
   },
 };
 </script>
