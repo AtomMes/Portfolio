@@ -15,12 +15,7 @@
             :key="i"
             class="ease-in-out duration-300 hover:scale-105 hover:-translate-y-1 relative"
           >
-            <img :src="imageSrc[0]" :alt="imageSrc[1]" class="w-full " />
-            <div
-              class="flex text-center w-full whitespace-nowrap justify-center items-end absolute top-0 h-[120%] duration-300 text-opacity-0 hover:text-opacity-100 text-white"
-            >
-              {{ imageSrc[1] }}
-            </div>
+            <Skill :icon="imageSrc" size="100%" about='true' />
           </div>
         </div>
       </div>
@@ -61,6 +56,7 @@ import vue from "../assets/vue.png";
 import redux from "../assets/redux.png";
 import tailwind from "../assets/tailwind.png";
 import angular from "../assets/angular.png";
+import Skill from "./Skill.vue";
 
 export default {
   name: "Hero",
@@ -84,6 +80,9 @@ export default {
         [mui, "Material-UI"],
       ],
     };
+  },
+  components: {
+    Skill,
   },
 };
 </script>

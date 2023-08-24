@@ -24,12 +24,7 @@
           :key="i"
           class="flex justify-center items-center ease-in-out duration-300 hover:scale-105 hover:-translate-y-1 relative"
         >
-          <img :src="icon[0]" :alt="icon[1]" class="h-[40px]" />
-          <div
-            class="flex whitespace-nowrap justify-center items-end absolute top-0 h-[160%] duration-300 text-opacity-0 hover:text-opacity-100 text-white"
-          >
-            {{ icon[1] }}
-          </div>
+          <Skill :icon="icon" size="40px" />
         </div>
       </div>
       <div class="flex gap-5">
@@ -66,6 +61,8 @@
 </style>
 
 <script>
+import Skill from "./Skill.vue";
+
 export default {
   name: "Project",
   props: {
@@ -87,15 +84,7 @@ export default {
     navigateToLink(link) {
       window.open(link, "_blank");
     },
-    created() {
-      this.property = "Example property update.";
-
-      console.log(
-        "propertyComputed will update, as this.property is now reactive."
-      );
-    },
     startScrolling() {
-      console.log("index is", this.index);
       this.intervalId = setInterval(() => {
         const container = this.$refs.imageContainer;
         if (container) {
@@ -119,6 +108,9 @@ export default {
         });
       }
     },
+  },
+  components: {
+    Skill,
   },
 };
 </script>
