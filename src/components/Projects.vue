@@ -19,6 +19,7 @@ import tailwind from "../assets/tailwind.png";
 import mui from "../assets/mui.svg";
 import firebase from "../assets/firebase.png";
 import typescript from "../assets/typescript.png";
+import javascript from "../assets/javascript.png";
 import memberHome from "../assets/projects/member.png";
 import redux from "../assets/redux.png";
 import fastFood from "../assets/projects/fast.png";
@@ -66,6 +67,7 @@ export default {
           image: memberbase,
           icons: [
             [angular, "Angular"],
+            [typescript, "TypeScript"],
             [tailwind, "Tailwind"],
           ],
           index: 2,
@@ -79,8 +81,9 @@ export default {
           image: fastFood,
           icons: [
             [react, "React"],
-            [mui, "MUI"],
             [redux, "Redux Toolkit"],
+            [javascript, "JavaScript"],
+            [mui, "MUI"],
           ],
           index: 3,
         },
@@ -95,6 +98,7 @@ export default {
           image: [mobileHome, mobileCart, mobileFull, mobileInfo],
           icons: [
             [react, "React Native"],
+            [typescript, "TypeScript"],
             [mui, "MUI"],
             [redux, "Redux Toolkit"],
           ],
