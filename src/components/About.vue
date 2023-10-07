@@ -15,7 +15,7 @@
             :key="i"
             class="ease-in-out duration-300 hover:scale-105 hover:-translate-y-1 relative"
           >
-            <img :src="imageSrc[0]" :alt="imageSrc[1]" class="w-full " />
+            <img :src="imageSrc[0]" :alt="imageSrc[1]" class="w-full" />
             <div
               class="flex text-center w-full whitespace-nowrap justify-center items-end absolute top-0 h-[120%] duration-300 text-opacity-0 hover:text-opacity-100 text-white"
             >
@@ -32,13 +32,13 @@
           A dedicated Front-end Developer based in Vanadzor, Armenia
         </p>
         <p class="text-[19px] text-[#dcdbdb]">
-          My name is Artem Mesropyan, I'm a 17-year-old self-taught front-end
+          My name is Artem Mesropyan, I'm a 18-year-old self-taught front-end
           developer from Armenia.
           <br />
-          With over a year of experience in web development, I enjoy working
+          With around 2 years of experience in web development, I enjoy working
           with Front-end development libraries such as React, Next, Vue, React
           Native, and Angular to create user-friendly websites. I am constantly
-          learning to keep up with the latest web dev tech.
+          learning to keep up with the latest web development technologies.
         </p>
       </div>
     </div>
